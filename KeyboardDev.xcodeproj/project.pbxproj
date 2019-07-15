@@ -13,7 +13,33 @@
 		184FCAEC22DCD15100BED110 /* KeyboardDev.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184FCAEA22DCD15100BED110 /* KeyboardDev.xcdatamodeld */; };
 		184FCAEE22DCD15200BED110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FCAED22DCD15200BED110 /* Assets.xcassets */; };
 		184FCAF122DCD15200BED110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184FCAEF22DCD15200BED110 /* LaunchScreen.storyboard */; };
+		184FCAFF22DCD1EB00BED110 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */; };
+		184FCB0322DCD1EB00BED110 /* DevKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		184FCB0122DCD1EB00BED110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184FCAD822DCD15100BED110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184FCAFB22DCD1EB00BED110;
+			remoteInfo = DevKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		184FCB0722DCD1EB00BED110 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				184FCB0322DCD1EB00BED110 /* DevKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		184FCAE022DCD15100BED110 /* KeyboardDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +50,20 @@
 		184FCAED22DCD15200BED110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184FCAF022DCD15200BED110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184FCAF222DCD15200BED110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DevKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		184FCB0022DCD1EB00BED110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		184FCADD22DCD15100BED110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FCAF922DCD1EB00BED110 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				184FCAE222DCD15100BED110 /* KeyboardDev */,
+				184FCAFD22DCD1EB00BED110 /* DevKeyboard */,
 				184FCAE122DCD15100BED110 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				184FCAE022DCD15100BED110 /* KeyboardDev.app */,
+				184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +105,15 @@
 			path = KeyboardDev;
 			sourceTree = "<group>";
 		};
+		184FCAFD22DCD1EB00BED110 /* DevKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */,
+				184FCB0022DCD1EB00BED110 /* Info.plist */,
+			);
+			path = DevKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +124,34 @@
 				184FCADC22DCD15100BED110 /* Sources */,
 				184FCADD22DCD15100BED110 /* Frameworks */,
 				184FCADE22DCD15100BED110 /* Resources */,
+				184FCB0722DCD1EB00BED110 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				184FCB0222DCD1EB00BED110 /* PBXTargetDependency */,
 			);
 			name = KeyboardDev;
 			productName = KeyboardDev;
 			productReference = 184FCAE022DCD15100BED110 /* KeyboardDev.app */;
 			productType = "com.apple.product-type.application";
+		};
+		184FCAFB22DCD1EB00BED110 /* DevKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184FCB0422DCD1EB00BED110 /* Build configuration list for PBXNativeTarget "DevKeyboard" */;
+			buildPhases = (
+				184FCAF822DCD1EB00BED110 /* Sources */,
+				184FCAF922DCD1EB00BED110 /* Frameworks */,
+				184FCAFA22DCD1EB00BED110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevKeyboard;
+			productName = DevKeyboard;
+			productReference = 184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +164,9 @@
 				ORGANIZATIONNAME = "Яблочек Inc.";
 				TargetAttributes = {
 					184FCADF22DCD15100BED110 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					184FCAFB22DCD1EB00BED110 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -116,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				184FCADF22DCD15100BED110 /* KeyboardDev */,
+				184FCAFB22DCD1EB00BED110 /* DevKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +198,13 @@
 				184FCAF122DCD15200BED110 /* LaunchScreen.storyboard in Resources */,
 				184FCAEE22DCD15200BED110 /* Assets.xcassets in Resources */,
 				184FCAE922DCD15100BED110 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FCAFA22DCD1EB00BED110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +221,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		184FCAF822DCD1EB00BED110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184FCAFF22DCD1EB00BED110 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		184FCB0222DCD1EB00BED110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184FCAFB22DCD1EB00BED110 /* DevKeyboard */;
+			targetProxy = 184FCB0122DCD1EB00BED110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		184FCAE722DCD15100BED110 /* Main.storyboard */ = {
@@ -285,6 +378,7 @@
 		184FCAF622DCD15200BED110 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKQMVYFNWM;
@@ -303,6 +397,7 @@
 		184FCAF722DCD15200BED110 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKQMVYFNWM;
@@ -313,6 +408,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Constantine-Inc..KeyboardDev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184FCB0522DCD1EB00BED110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKQMVYFNWM;
+				INFOPLIST_FILE = DevKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Constantine-Inc..KeyboardDev.DevKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184FCB0622DCD1EB00BED110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKQMVYFNWM;
+				INFOPLIST_FILE = DevKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Constantine-Inc..KeyboardDev.DevKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +468,15 @@
 			buildConfigurations = (
 				184FCAF622DCD15200BED110 /* Debug */,
 				184FCAF722DCD15200BED110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184FCB0422DCD1EB00BED110 /* Build configuration list for PBXNativeTarget "DevKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184FCB0522DCD1EB00BED110 /* Debug */,
+				184FCB0622DCD1EB00BED110 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

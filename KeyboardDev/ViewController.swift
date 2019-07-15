@@ -1,20 +1,28 @@
-//
-//  ViewController.swift
-//  KeyboardDev
-//
-//  Created by Яблочек on 15/07/2019.
-//  Copyright © 2019 Яблочек Inc. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: - IBOutlets
 
+    @IBOutlet weak var newMarkTextField: UITextField!
+    
+
+    //MARK: - Main functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+    
+    //MARK: - IBActions
+    
+    
+    //MARK: - Flow functions
+    
+}
 
-
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.newMarkTextField.resignFirstResponder()
+        return true
+    }
 }
 
