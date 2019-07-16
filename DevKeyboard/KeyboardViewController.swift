@@ -1,9 +1,14 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
+    //MARK: - Proberty
+    var keyboardView: KeyboardView!
+    
+    //MARK: - IBOutlets
     @IBOutlet var nextKeyboardButton: UIButton!
     
+    
+    //MARK: - Main functions
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
@@ -12,6 +17,12 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.keyboardView = KeyboardView.fromNib()
+        self.keyboardView.keyboardViewControllerDelegate = self
+
+        guard let inputView = self.inputView else {return}
+        inputView.addSubview(self.keyboardView)
         
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
@@ -33,6 +44,8 @@ class KeyboardViewController: UIInputViewController {
         super.viewWillLayoutSubviews()
     }
     
+    
+    
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
@@ -51,3 +64,4 @@ class KeyboardViewController: UIInputViewController {
     }
 
 }
+

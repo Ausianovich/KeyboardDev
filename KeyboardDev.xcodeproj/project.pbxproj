@@ -15,6 +15,8 @@
 		184FCAF122DCD15200BED110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184FCAEF22DCD15200BED110 /* LaunchScreen.storyboard */; };
 		184FCAFF22DCD1EB00BED110 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */; };
 		184FCB0322DCD1EB00BED110 /* DevKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18DE499122DD05700011F755 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DE499022DD05700011F755 /* KeyboardView.xib */; };
+		18DE499322DD059F0011F755 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE499222DD059F0011F755 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		184FCAFC22DCD1EB00BED110 /* DevKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DevKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		184FCB0022DCD1EB00BED110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DE499022DD05700011F755 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		18DE499222DD059F0011F755 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				184FCAFE22DCD1EB00BED110 /* KeyboardViewController.swift */,
+				18DE499022DD05700011F755 /* KeyboardView.xib */,
+				18DE499222DD059F0011F755 /* KeyboardView.swift */,
 				184FCB0022DCD1EB00BED110 /* Info.plist */,
 			);
 			path = DevKeyboard;
@@ -205,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DE499122DD05700011F755 /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FCAFF22DCD1EB00BED110 /* KeyboardViewController.swift in Sources */,
+				18DE499322DD059F0011F755 /* KeyboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
