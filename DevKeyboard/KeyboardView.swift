@@ -11,14 +11,15 @@ class KeyboardView: UIInputView {
     
     
     //MARK: - IBActions
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        insertText(sender.titleLabel?.text ?? "")
-    }
-    
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         guard let letterTitle = sender.titleLabel?.text else {return}
-        insertText(letterTitle)
+        self.insertText(letterTitle)
     }
+    
+    @IBAction func returnPressed (_ sender: UIButton) {
+        self.keyboardViewControllerDelegate.textDocumentProxy.deleteBackward()
+    }
+    
     
     //MARK: - Flow functions
     static func fromNib() -> KeyboardView {
