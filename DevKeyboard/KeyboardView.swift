@@ -9,6 +9,8 @@ class KeyboardView: UIInputView {
     
     //MARK: - IBOutlets
     
+    @IBOutlet weak var shiftButton: UIButton!
+    @IBOutlet weak var backSpaceButton: UIButton!
     
     //MARK: - IBActions
     @IBAction func letterButtonPressed(_ sender: UIButton) {
@@ -29,5 +31,11 @@ class KeyboardView: UIInputView {
     func insertText(_ text: String){
         self.keyboardViewControllerDelegate.textDocumentProxy.insertText(text)
     }
+    
+//    func setImagesToButton(){
+//        self.shiftButton.imageView?.image = UIImage(named: "shift")
+//        print("картинка установлена")
+//    }
+    
     
 }
