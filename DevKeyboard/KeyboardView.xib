@@ -1045,6 +1045,9 @@
                                             <state key="normal" title="space" image="space">
                                                 <color key="titleColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </state>
+                                            <connections>
+                                                <action selector="spacePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="AaN-Eu-95A"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628509999998" green="0.8350494504" blue="0.8548987508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1095,6 +1098,9 @@
                                             <rect key="frame" x="3" y="7" width="89" height="43"/>
                                             <color key="backgroundColor" red="0.82358628509999998" green="0.8350494504" blue="0.8548987508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="return" image="return"/>
+                                            <connections>
+                                                <action selector="returnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="umx-if-bch"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628509999998" green="0.8350494504" blue="0.8548987508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

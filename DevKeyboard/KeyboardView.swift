@@ -7,10 +7,6 @@ class KeyboardView: UIInputView {
     
     var keyboardViewControllerDelegate: KeyboardViewController!
     
-    //MARK: - IBOutlets
-    
-    @IBOutlet weak var shiftButton: UIButton!
-    
     //MARK: - IBActions
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         guard let letterTitle = sender.titleLabel?.text else {return}
@@ -21,10 +17,18 @@ class KeyboardView: UIInputView {
         self.keyboardViewControllerDelegate.textDocumentProxy.deleteBackward()
     }
     
+    @IBAction func returnPressed (_ sender: UIButton) {
+        self.keyboardViewControllerDelegate.dismissKeyboard()
+    }
+    
     @IBAction func bracketsPressed (_ sender: UIButton) {
         guard let buttonTitle = sender.titleLabel?.text else {return}
         self.keyboardViewControllerDelegate.textDocumentProxy.insertText(buttonTitle)
         self.keyboardViewControllerDelegate.textDocumentProxy.adjustTextPosition(byCharacterOffset: -1)
+    }
+    
+    @IBAction func spacePressed (_ sender: UIButton) {
+        self.keyboardViewControllerDelegate.textDocumentProxy.insertText(" ")
     }
     
     //MARK: - Flow functions
@@ -32,14 +36,7 @@ class KeyboardView: UIInputView {
         return UINib(nibName: "KeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! KeyboardView
     }
     
-    func insertText(_ text: String){
+    private func insertText(_ text: String){
         self.keyboardViewControllerDelegate.textDocumentProxy.insertText(text)
     }
-    
-//    func setImagesToButton(){
-//        self.shiftButton.imageView?.image = UIImage(named: "shift")
-//        print("картинка установлена")
-//    }
-    
-    
 }

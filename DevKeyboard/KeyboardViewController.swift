@@ -3,8 +3,6 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
     //MARK: - Proberty
     var keyboardView: KeyboardView!
-    
-    //MARK: - IBOutlets
 
     //MARK: - Main functions
     override func updateViewConstraints() {
