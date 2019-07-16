@@ -10,7 +10,6 @@ class KeyboardView: UIInputView {
     //MARK: - IBOutlets
     
     @IBOutlet weak var shiftButton: UIButton!
-    @IBOutlet weak var backSpaceButton: UIButton!
     
     //MARK: - IBActions
     @IBAction func letterButtonPressed(_ sender: UIButton) {
@@ -22,6 +21,11 @@ class KeyboardView: UIInputView {
         self.keyboardViewControllerDelegate.textDocumentProxy.deleteBackward()
     }
     
+    @IBAction func bracketsPressed (_ sender: UIButton) {
+        guard let buttonTitle = sender.titleLabel?.text else {return}
+        self.keyboardViewControllerDelegate.textDocumentProxy.insertText(buttonTitle)
+        self.keyboardViewControllerDelegate.textDocumentProxy.adjustTextPosition(byCharacterOffset: -1)
+    }
     
     //MARK: - Flow functions
     static func fromNib() -> KeyboardView {

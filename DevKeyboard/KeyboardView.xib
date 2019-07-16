@@ -29,6 +29,9 @@
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="{}" image="braces"/>
+                                            <connections>
+                                                <action selector="bracketsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QP1-P5-oZa"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -45,6 +48,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-9J-ACC">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="[]" image="squareBrackets"/>
+                                            <connections>
+                                                <action selector="bracketsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="t2c-fS-kqv"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -61,6 +67,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-YU-5hO">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="()" image="roundBrackets"/>
+                                            <connections>
+                                                <action selector="bracketsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="bGg-rE-nrK"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -77,6 +86,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbc-bP-JN2">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="&lt;&gt;" image="angleBrackets"/>
+                                            <connections>
+                                                <action selector="bracketsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="3ls-fg-gse"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
