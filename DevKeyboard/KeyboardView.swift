@@ -18,7 +18,7 @@ class KeyboardView: UIInputView {
         self.insertText(letterTitle)
     }
     
-    @IBAction func returnPressed (_ sender: UIButton) {
+    @IBAction func backSpacePressed (_ sender: UIButton) {
         self.keyboardViewControllerDelegate.textDocumentProxy.deleteBackward()
     }
     

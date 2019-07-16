@@ -93,6 +93,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-6r-5gj">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="!" image="exclamation"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="jrE-ef-Qrw"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -109,6 +112,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-kh-HOH">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="?" image="quest"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="UrT-bf-Pqi"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -125,6 +131,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiR-zR-kCh">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="/" image="slash"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="896-gh-VtD"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -141,6 +150,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-r2-lyx">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="*" image="mult"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="xm7-OY-vM4"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -157,6 +169,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVI-Ch-bwp">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="," image="comma"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7lV-NX-Ajk"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -173,6 +188,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0B-mz-FOq">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="." image="dot"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qw3-QQ-IaS"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -250,6 +268,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="z" image="z"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eHN-ok-OwM"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -267,6 +288,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="x" image="x"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="GcX-8v-tdG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -284,6 +308,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="c" image="c"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="EPH-aV-WXB"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -301,6 +328,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="v" image="v"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="UmE-10-dfV"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -318,6 +348,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="b" image="b"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="lM9-dw-9ZU"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -335,6 +368,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="n" image="n"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="n9h-le-3xK"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -352,6 +388,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="m" image="m"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="UOK-hu-zWC"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -440,6 +479,9 @@
                                                     <state key="normal" title="bs" image="backSpace">
                                                         <color key="titleColor" red="0.82356113200000003" green="0.8235432506" blue="0.82354682680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="backSpacePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0aU-Uc-u6j"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -494,6 +536,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="a" image="a"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZQ5-Ok-3oz"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -511,6 +556,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="s" image="s"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="LCG-fx-0Ps"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -528,6 +576,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="d" image="d"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eZI-st-lkD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -545,6 +596,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="f" image="f"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZKS-Va-56b"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -562,6 +616,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="g" image="g"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ENL-co-8a0"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -579,6 +636,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="h" image="h"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="oWo-zN-6Sw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -596,6 +656,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="j" image="j"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="eLG-WZ-8NV"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -613,6 +676,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="k" image="k"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="FQA-wS-IYT"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -630,6 +696,9 @@
                                                     <rect key="frame" x="3" y="7" width="32" height="43"/>
                                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="l" image="l"/>
+                                                    <connections>
+                                                        <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Heg-MO-m5G"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -708,6 +777,9 @@
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="q" image="q"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="dQa-Rb-8gR"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -724,6 +796,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkC-A4-HpW">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="w" image="w"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QKh-Lk-MRW"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -741,6 +816,9 @@
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="e" image="e"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ua5-dL-dKK"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -757,6 +835,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-tl-Ub4">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="r" image="r"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="TdP-TM-qBp"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -773,6 +854,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcW-S5-PMW">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="t" image="t"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zzv-Xt-nGV"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -789,6 +873,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqd-hQ-B4P">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="y" image="y"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="3cI-U3-ceN"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -805,6 +892,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ego-By-avC">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="u" image="u"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="lRT-wa-2sw"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -821,6 +911,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shP-5b-7FP">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="i" image="i"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="BCv-2Y-WdU"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -837,6 +930,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPS-pK-E36">
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <state key="normal" title="o" image="o"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ep0-r5-GfY"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -854,6 +950,9 @@
                                             <rect key="frame" x="3" y="7" width="32" height="43"/>
                                             <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="p" image="p"/>
+                                            <connections>
+                                                <action selector="letterButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="NDw-ml-SSD"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.82358628511428833" green="0.83504945039749146" blue="0.85489875078201294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
